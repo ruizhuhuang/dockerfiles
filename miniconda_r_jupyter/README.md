@@ -1,10 +1,10 @@
 # Docker Build Files
 
-Docker files and shell scripts to build image with latest miniconda, R, Java and Jupyter from centos:7.6.1810. 
+Docker files and shell scripts to build a image with latest miniconda, R, Java and Jupyter from centos:7.6.1810. 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Install Dockter following the link in the Prerequisites. Then build the image.
 
 ### Prerequisites
 
@@ -18,7 +18,7 @@ $ sudo yum-config-manager \
     https://download.docker.com/linux/centos/docker-ce.repo
 ```
 
-### Installing
+### Build the image
 
 Steps to build the images as 'miniconda_r_jupyter:1.0'
 
@@ -30,7 +30,7 @@ $ cd dockerfiles/miniconda_r_jupyter/
 $ docker build --tag miniconda_r_jupyter:1.0 .
 ```
 
-## Run docker image
+## Run the docker image
 ```
 $ docker run -it --rm miniconda_r_jupyter:1.0
 ```
