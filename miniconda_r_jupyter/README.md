@@ -74,18 +74,14 @@ traitlets        : 4.3.3
 * [R 3.6.1](https://www.r-project.org/) - conda install -y -c r r
 * [jupyter](https://jupyter.org/) - conda install -y -c anaconda jupyter
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
 * **Ruizhu Huang** 
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License.
 
 
