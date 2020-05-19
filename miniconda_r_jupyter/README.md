@@ -19,7 +19,7 @@ $ sudo yum-config-manager \
     https://download.docker.com/linux/centos/docker-ce.repo
 ```
 
-### Build the image
+### Build Image
 
 Steps to build the images as 'miniconda_r_jupyter:1.0'
 
@@ -31,7 +31,7 @@ $ cd dockerfiles/miniconda_r_jupyter/
 $ docker build --tag miniconda_r_jupyter:1.0 .
 ```
 
-## Run the docker image
+## Run Docker Image
 ```
 $ docker run -it --rm miniconda_r_jupyter:1.0
 ```
