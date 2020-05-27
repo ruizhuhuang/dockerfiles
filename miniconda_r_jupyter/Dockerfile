@@ -2,7 +2,7 @@
 FROM centos:7.6.1810
 
 # Set the working directory in docker.
-WORKDIR /root
+WORKDIR /
 
 # Copy the file from your host to your current location.
 COPY miniconda_and_r_jupyter.sh .
