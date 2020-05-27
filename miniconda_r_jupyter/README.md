@@ -1,7 +1,9 @@
 # Docker Build Files
 
 Docker files and shell scripts to build a image with latest miniconda, R, Java and Jupyter from centos:7.6.1810. 
-miniconda_and_r_jupyter.sh is used to install some required packages with font and X11 supports
+miniconda_and_r_jupyter.sh is used to install some required packages with font and X11 supports.
+
+To use the docker image on Stampede2 at TACC, see section 'Pull Docker image into Singularity'
 
 ## Getting Started
 
@@ -64,6 +66,20 @@ nbconvert        : 5.6.1
 ipywidgets       : 7.5.1
 nbformat         : 5.0.6
 traitlets        : 4.3.3
+
+```
+
+## Pull Docker image into Singularity
+### On your local computer (need to edit to use docker file instead of image itself)
+```
+$ docker tag miniconda_r_jupyter:[version tag] [DockerHub username]/conda_r_jupyter:[version tag]
+$ docker push [DockerHub username]/conda_r_jupyter:[version tag]
+```
+### On Stampede2
+```
+$ ml tacc-singularity/3.4.2
+$ singularity run  docker://[DockerHub username]/conda_r_jupyter:[version tag]
+$ . /home/tacc/.bashrc 
 
 ```
 
