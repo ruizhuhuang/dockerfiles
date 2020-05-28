@@ -40,6 +40,8 @@ $ docker run -it --rm miniconda_r_jupyter:1.0
 
 ## Test and Check Versions
 ```
+[root@20bf71a9f1ef /]# . /home/tacc/.bashrc 
+
 (base) [root@be189592f9fe ~]# cat /etc/*elease
 CentOS Linux release 7.6.1810 (Core)
 
@@ -66,6 +68,10 @@ nbconvert        : 5.6.1
 ipywidgets       : 7.5.1
 nbformat         : 5.0.6
 traitlets        : 4.3.3
+
+(base) [root@20bf71a9f1ef /]# scala -version
+Scala code runner version 2.11.8 -- Copyright 2002-2016, LAMP/EPFL
+
 
 ```
 
