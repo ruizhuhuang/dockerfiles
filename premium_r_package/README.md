@@ -1,6 +1,6 @@
 # Docker Build Files
 
-image with PReMiuM R package 
+Ouput image with PReMiuM R package and python, java, scala, jupyter 
 
 https://hub.docker.com/repository/docker/ruizhuhuang/r_premium
 
