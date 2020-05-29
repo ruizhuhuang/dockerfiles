@@ -1,9 +1,9 @@
 # Docker Build Files
 
-Docker files and shell scripts to build a image with latest miniconda, R, Java and Jupyter from centos:7.6.1810. 
-miniconda_and_r_jupyter.sh is used to install some required packages with font and X11 supports.
+image with PReMiuM R package 
 
-To use the docker image on Stampede2 at TACC, see section 'Pull Docker image into Singularity'
+https://hub.docker.com/repository/docker/ruizhuhuang/r_premium
+
 
 ## Getting Started
 
