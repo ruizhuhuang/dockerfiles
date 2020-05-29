@@ -1,3 +1,7 @@
+#!/bin/bash
+##############################################
+# base image of python, r, scala, java
+###############################################
 yum install -y wget 
 yum install -y which 
 yum install -y vim fontconfig libXt zip unzip java-1.8.0-openjdk-devel git
@@ -20,7 +24,16 @@ bash ./Miniconda3-latest-Linux-x86_64.sh -b
 conda install -y -c r r
 conda install -y -c anaconda jupyter
 
+EOF
 
+chmod -R go+rX /home/ 
+
+
+###################################
+# install PReMiuM R package
+###################################
+su tacc << 'EOF'
+. ~/.bashrc
 
 cd ~/apps
 
@@ -38,7 +51,8 @@ R CMD INSTALL Matrix_1.2-18.tar.gz
 wget https://cran.r-project.org/src/contrib/PReMiuM_3.2.3.tar.gz
 R CMD INSTALL PReMiuM_3.2.3.tar.gz
 
+
 EOF
 
-chmod -R go+rX /home/ 
+chmod -R go+rX /home/
 

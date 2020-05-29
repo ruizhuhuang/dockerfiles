@@ -1,5 +1,5 @@
 # Use the official image as a parent image.
-FROM ruizhuhuang/conda_r_jupyter_scala:latest
+FROM centos:7.6.1810
 
 # Set the working directory in docker.
 WORKDIR /
